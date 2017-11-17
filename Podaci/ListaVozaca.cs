@@ -8,17 +8,32 @@ namespace Podaci
 {
     public class ListaVozaca
     {
+
+        #region Attributes
+
         public delegate bool SortDelegate(Vozac v1, Vozac v2);
         public SortDelegate SortListDelegate { get; set; }
 
         List<Vozac> _listaVozaca;
 
+        #endregion
+
+        #region Properties
+
         public List<Vozac> ListaVozacaValues { get { return _listaVozaca; } }
+
+        #endregion
+
+        #region Constructors
 
         private ListaVozaca()
         {
             _listaVozaca = new List<Vozac>();
         }
+
+        #endregion
+
+        #region Methods
 
         public Vozac getVozac(string brDozvole)
         {
@@ -54,6 +69,10 @@ namespace Podaci
             return true;
         }
 
+        #endregion
+
+        #region Singleton Pattern
+
         static ListaVozaca _instance = null;
         public static ListaVozaca Instance
         {
@@ -64,6 +83,8 @@ namespace Podaci
                 return _instance;
             }
         }
-        
+
+        #endregion
+
     }
 }

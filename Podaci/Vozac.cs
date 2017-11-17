@@ -30,22 +30,22 @@ namespace Podaci
 
         #region Properties
 
-        public string Ime { get => _ime; set => _ime = value; }
-        public string Prezime { get => _prezime; set => _prezime = value; }
+        public string Ime { get { return _ime; }  set { _ime = value; } }
+        public string Prezime { get { return _prezime; } set { _prezime = value; } }
         [DisplayName("Datum rodjenja")]
-        public DateTime DatumRodjenja { get => _datumRodjenja; set => _datumRodjenja = value; }
+        public DateTime DatumRodjenja { get { return _datumRodjenja; } set { _datumRodjenja = value; } }
         [DisplayName("Pocetak vazenja dozvole")]
-        public DateTime DozvolaOd { get => _dozvolaOd; set => _dozvolaOd = value; }
+        public DateTime DozvolaOd { get { return _dozvolaOd; } set { _dozvolaOd = value; } }
         [DisplayName("Kraj vazenja dozvole")]
-        public DateTime DozvolaDo { get => _dozvolaDo; set => _dozvolaDo = value; }
+        public DateTime DozvolaDo { get { return _dozvolaDo; } set { _dozvolaDo = value; } }
         [DisplayName("Broj vozacke dozvole")]
-        public string BrojDozvole { get => _brojDozvole; set => _brojDozvole = value; }
+        public string BrojDozvole { get { return _brojDozvole; } set { _brojDozvole = value; } }
         [DisplayName("Mesto izdavanja dozvole")]
-        public string MestoIzdavanja { get => _mestoIzdavanja; set => _mestoIzdavanja = value; }
-        public bool Pol { get => _pol; set => _pol = value; }
+        public string MestoIzdavanja { get { return _mestoIzdavanja; } set { _mestoIzdavanja = value; } }
+        public bool Pol { get { return _pol; } set { _pol = value; } }
         public List<DozvolaKategorije> ListaKategorija { get { return _listaKategorija; } set { _listaKategorija = value; } }
         public List<DozvolaKategorije> ListaZabrana { get { return _listaZabrana; } set { _listaZabrana = value; } }
-        public string ImgPath { get => _imgPath; set => _imgPath = value; }
+        public string ImgPath { get { return _imgPath; } set { _imgPath = value; } }
 
 
         #endregion

@@ -25,13 +25,13 @@ namespace Podaci
 
         #region Properties
         
-        public Kategorija Kategorije { get => _kategorije; set => _kategorije = value; }
+        public Kategorija Kategorije { get { return _kategorije; } set { _kategorije = value; } }
         [DisplayName("Kategorija")]
-        public string ZaPrikaz { get => _kategorije.ToString(); }
+        public string ZaPrikaz { get { return _kategorije.ToString(); } }
         [DisplayName("Datum izdavanja")]
-        public DateTime DatumOd { get => _datumOd; set => _datumOd = value; }
+        public DateTime DatumOd { get { return _datumOd; } set { _datumOd = value; } }
         [DisplayName("Datum isteka")]
-        public DateTime DatumDo { get => _datumDo; set => _datumDo = value; }
+        public DateTime DatumDo { get { return _datumDo; } set { _datumDo = value; } }
 
         #endregion
 
